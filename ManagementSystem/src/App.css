@@ -1,8 +1,12 @@
-
-
 .appContainer{
     min-height: 100dvh;
     min-width: 100dvw;
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 767px){
+    .appContainer{
+        flex-direction: column;
+    }
 }

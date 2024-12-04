@@ -1,5 +1,30 @@
-.homeContent{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  row-gap: 0.5rem;
+  width: 100dvw;
+}
+
+.homeCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0rem 1rem;
+  row-gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .homeCards{
+        max-width: 100%;
+        row-gap: 1.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .homeCards{
+        max-width: 100%;
+        row-gap: 1rem;
+    }
 }
