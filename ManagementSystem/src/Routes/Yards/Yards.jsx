@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import styles from './Yards.module.css';
+import { Link } from "react-router-dom";
 
 const Yards = () => {
   return (

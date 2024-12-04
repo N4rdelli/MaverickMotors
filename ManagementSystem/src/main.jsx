@@ -17,7 +17,9 @@ import Rentals from './Routes/Rentals/Rentals.jsx';
 import Dashboard from './Routes/Dashboard/Dashboard.jsx';
 
 import YardDetails from './Routes/Yards/YardDetails.jsx';
-
+import VehicleDetails from './Routes/Vehicles/VehicleDetails.jsx'
+import CostumerDetails from './Routes/Costumers/CostumerDetails.jsx'
+import RentalDetails from './Routes/Rentals/RentalDetails.jsx'
 
 const routes = createBrowserRouter([
   {
@@ -42,12 +44,24 @@ const routes = createBrowserRouter([
         element: <Vehicles />
       },
       {
+        path: "/vehicles/:id",
+        element: <VehicleDetails />
+      },
+      {
         path: "/costumers",
         element: <Costumers />
       },
       {
+        path: "/costumers/:id",
+        element: <CostumerDetails />
+      },
+      {
         path: "/rentals",
         element: <Rentals />
+      },
+      {
+        path: "/rentals/:id",
+        element: <RentalDetails />
       },
       {
         path: "/dashboard",
