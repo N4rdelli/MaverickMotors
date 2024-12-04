@@ -1,7 +1,7 @@
-import styles from "./Header.module.css";
+import styles from "./Nav.module.css";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Nav = () => {
   return (
     <nav>
       <Link to={"/"} className={styles.logoContainer}>
@@ -37,4 +37,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Nav;
