@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light dark;
+  --primary-dark-color: #0d131b;
+  --secondary-dark-color: #1f252e;
+  --primary-light-color: #d9ebf2;
+  --secondary-light-color: #394960;
+  --primary-color: #5967f6;
+}
+
+nav {
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  row-gap: 3rem;
+
+  background-color: var(--primary-dark-color);
+  color: var(--secondary-light-color);
+}
+
+.logoContainer {
+  display: inline-flex;
+}
+
+.navLinksContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  width: fit-content;
+  height: fit-content;
+}
+
+.navLink {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 1rem;
+  height: fit-content;
+
+  text-decoration: none;
+  color: var(--secondary-light-color);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.navButtonLogout {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 1rem;
+
+  height: fit-content;
+  width: fit-content;
+
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--secondary-light-color);
+}
