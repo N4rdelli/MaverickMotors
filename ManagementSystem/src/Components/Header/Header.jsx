@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className={styles.headerContent}>
       <div className={styles.searchBar}>
-        Search
+        <input type='search' placeholder="Search..." style={{placeholder:'#394960'}}/>
         <i className="bi bi-search" />
       </div>
       <button className={styles.filterButton}>
