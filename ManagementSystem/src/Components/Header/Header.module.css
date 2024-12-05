@@ -83,7 +83,6 @@
 .filterButton:hover {
   background: var(--primary-color);
   color: var(--primary-light-color);
-  transform: scale(1.05);
   transition: all 0.3s ease;
 }
 

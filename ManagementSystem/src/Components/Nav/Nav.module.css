@@ -46,10 +46,6 @@ nav {
   color: var(--secondary-light-color);
   font-weight: 500;
   transition: all 0.3s ease;
-  
-  :hover {
-    color: var(--primary-color);
-  }
 
   i {
     font-size: 1.5rem;
@@ -59,7 +55,10 @@ nav {
   p {
     font-size: 1rem;
   }
+}
 
+.navLink:hover {
+  color: var(--primary-color);
 }
 
 .active {
@@ -82,14 +81,14 @@ nav {
   transition: all 0.3s ease;
   cursor: pointer;
 
-  :hover {
-    color: var(--primary-color);
-  }
-
   i {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+}
+
+.navButtonLogout:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 1024px) {
