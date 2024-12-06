@@ -2,6 +2,7 @@
   color-scheme: light dark;
   --primary-dark-color: #0d131b;
   --primary-light-color: #d9ebf2;
+  --secondary-light-color: #394960;
   --primary-color: #5967f6;
 }
 
@@ -16,6 +17,13 @@
   background-color: var(--primary-dark-color);
   border-radius: 5pt;
   border: none;
+
+  transition: all 0.3s ease;
+}
+
+.homeCardContainer:hover{
+  scale: 1.02;
+  box-shadow: 0 0 20px #5967f655;
 }
 
 .homeCardInfo {
@@ -42,6 +50,9 @@
   flex-grow: 1;
   row-gap: 0.5rem;
 
+  border-radius: 5pt;
+  transition: all 0.3s ease;
+
   hr {
     border-color: var(--primary-color);
   }
@@ -52,6 +63,19 @@
     color: var(--primary-color);
     align-self: center;
     text-decoration: none;
+  }
+}
+
+.homeCardViewAll:hover{
+  background-color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  
+  hr{
+    border-color: var(--secondary-light-color);
+  }
+
+  h3{
+    color: var(--primary-light-color);
   }
 }
 
@@ -77,8 +101,12 @@
     row-gap: 0.4rem;
 
     h3 {
-      font-size: 0.6rem;
+      font-size: 0.775rem;
     }
+  }
+
+  .homeCardViewAll:hover {
+    padding-bottom: 0.4rem;
   }
 }
 
@@ -103,10 +131,14 @@
       }
     
       .homeCardViewAll {
-        row-gap: 0.2rem;
+        row-gap: 0.25rem;
     
         h3 {
-          font-size: 0.6rem;
+          font-size: 0.675rem;
         }
+      }
+
+      .homeCardViewAll:hover {
+        padding-bottom: 0.25rem;
       }
 }

@@ -64,6 +64,10 @@
   }
 }
 
+.searchBar:hover i {
+  animation: pulse 2s infinite;
+}
+
 .filterButton {
   display: flex;
   justify-content: center;
@@ -82,8 +86,13 @@
 
 .filterButton:hover {
   background: var(--primary-color);
+  box-shadow: 0 0 5px #5967f699;
   color: var(--primary-light-color);
   transition: all 0.3s ease;
+}
+
+.filterButton:hover i {
+  animation: pulse 2s infinite;
 }
 
 .addButton {
@@ -108,12 +117,13 @@
 
 .addButton:hover {
   background: var(--primary-color);
+  box-shadow: 0 0 5px #5967f699;
   color: var(--primary-light-color);
   transition: background-color 0.3s, color 0.3s;
 }
 
 .addButton:hover i {
-  animation: pulse 1s infinite;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
